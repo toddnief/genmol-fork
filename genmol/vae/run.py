@@ -4,6 +4,7 @@ from vae_model import VAE
 from data import *
 from samples import *
 
+print(device)
 model = VAE(vocab,vector).to(device)
 fit(model, train_data)
 model.eval()
