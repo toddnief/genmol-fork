@@ -2,7 +2,7 @@ import pandas as pd
 import torch
 
 
-data = pd.read_csv('C:/Users/ASUS\Desktop/intern things/dataset_iso_v1.csv')
+data = pd.read_csv('dataset_v1.csv')
 train_data1 = data[data['SPLIT'] == 'train']
 train_data_smiles2 = (train_data1["SMILES"].squeeze()).astype(str).tolist()
 train_data = train_data_smiles2
